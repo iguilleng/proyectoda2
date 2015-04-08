@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>MasterPages Demo</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 96%;
+        }
+        .nuevoEstilo1 {
+            vertical-align: top;
+            background-color: #D6D6D6;
+            width: 200px;
+            height: 300px;
+        }
+        .nuevoEstilo2 {
+            background-color: #999999;
+            height: 48px;
+            border-bottom-style: sold;
+            border-bottom-width: thick;
+            border-bottom-color: #336600;
+        }
+        .nuevoEstilo3 {
+            background-color: #999999;
+            border-bottom-style: solid;
+            border-bottom-width: thick;
+            border-bottom-color: #336600;
+            height: 48px;
+        }
+        .nuevoEstilo4 {
+            height: 48px;
+        }
+        .nuevoEstilo5 {
+            height: 48px;
+        }
+        .nuevoEstilo6 {
+            text-align: center;
+        }
+        .nuevoEstilo7 {
+            text-align: center;
+        }
+        .auto-style3 {
+            text-align: center;
+            height: 47px;
+        }
+        .auto-style4 {
+            height: 47px;
+        }
+        .nuevoEstilo8 {
+            background-image: url('/UCSM.png');
+        }
+        .nuevoEstilo9 {
+            height: 100px;
+            background-image: url('/UCSM.png');
+        }
+        .nuevoEstilo10 {
+            text-align: center;
+        }
+        .auto-style5 {
+            height: 300px;
+        }
+        .nuevoEstilo11 {
+            text-align: center;
+        }
+        .nuevoEstilo12 {
+            text-align: center;
+        }
+        .nuevoEstilo13 {
+            text-align: center;
+            font-family: Arial;
+            font-size: x-small;
+        }
+        .nuevoEstilo14 {
+        }
+        .nuevoEstilo15 {
+            background-color: #DCD4AF;
+        }
+        .nuevoEstilo16 {
+            height: 50px;
+            right: 50px;
+            font-size: xx-small;
+        }
+        .auto-style6 {
+            height: 124px;
+            background-image: url('/WebSite2/UCSM.png');
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style6" colspan="2">
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style4">
+                    <h2>&nbsp;</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="nuevoEstilo1">Menu<asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowLines="True">
+                    </asp:TreeView>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td class="auto-style5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p>
+
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr class="nuevoEstilo15">
+                <td colspan="2" class="nuevoEstilo12"><span class="nuevoEstilo16">Copyright © Universidad Católica de Santa María 2012.
+                    <br />
+                    Urb. San José s/n Umacollo Arequipa - Perú 
+                    <br />
+                    Central Telefónica +51 54 382038
+                    <br />
+                    Todos los derechos Reservados.</span></td>
+            </tr>
+        </table>
+    </div>
+    </form>
+    <p>
+    </p>
+</body>
+</html>
